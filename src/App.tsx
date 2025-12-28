@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     setResult("");
 
-    const res = await fetch(`${API_BASE_URL}/api/fun?type=${type}`);
+    const res = await fetch(`/api/fun?type=${type}`);
     const data = await res.json();
 
     setTimeout(() => {
